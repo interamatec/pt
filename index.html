@@ -114,7 +114,7 @@
 				<div class="w3-black w3-padding" style="margin-top:8px">tecnologia interativa</div>
 			</div>
 			<div class="w3-display-bottommiddle" style="padding-bottom:2rem; color:white">
-				<i class="fa fa-2x fa-arrow-down" aria-hidden="true"></i>
+				<i class="fa fa-2x fa-arrow-down arrow-down" aria-hidden="true" style="cursor:pointer"></i>
 			</div>
 		</div>
 	</header>
@@ -489,12 +489,10 @@
 					<p>O Outback Kids é um aplicativo que foi desenvolvido em parceria com a agência Media Interactive para o Outback Steakhouse. Nele, crianças tem acesso a três mini jogos e ao menu Outback Kids.</p>
 				</div>
 			</div>
-			<div class="w3-display-container" style="height:160px;">
-				<div class="w3-display-middle">
-					<a target="_blank" href='https://play.google.com/store/apps/details?id=br.com.outback.kids.jogo1&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
-						<img alt='Disponível no Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/pt-br_badge_web_generic.png' />
-					</a>
-				</div>
+			<div class="w3-padding-bottom w3-center custom-row">
+				<a target="_blank" href='https://play.google.com/store/apps/details?id=br.com.outback.kids.jogo1&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
+					<img alt="Disponível no Google Play" src="imgs/google.png" /></a>
+				</a>
 			</div>
 		</div>
 	</div>
@@ -858,6 +856,13 @@ $(document).ready(function() {
 		lazyEffect: "fade"
 	});
 });
+
+$('.arrow-down').click(function (){
+	 $('html, body').animate({
+        scrollTop: $('#home').height()
+    }, 1000);
+});
+
 	</script>
 </body>
 
