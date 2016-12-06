@@ -43,7 +43,7 @@
 		}
 		
 		.bg {
-			background-image: url(imgs/apple-1920.jpg);
+			background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(imgs/top.jpg);
 			background-position: center;
 			width: 100%;
 			height: 100%;
@@ -98,9 +98,9 @@
 		<div class="bg">
 			<div class="w3-display-middle">
 				<img class="w3-image" src="imgs/logo.png" alt="" width="252" height="56">
-				<div class="w3-black w3-padding" style="margin-top:8px">Tecnologia interativa</div>
+				<div class="w3-black w3-padding" style="margin-top:8px">tecnologia interativa</div>
 			</div>
-			<div class="w3-display-bottommiddle" style="padding-bottom:2rem">
+			<div class="w3-display-bottommiddle" style="padding-bottom:2rem; color:white">
 				<i class="fa fa-2x fa-arrow-down" aria-hidden="true"></i>
 			</div>
 		</div>
@@ -790,34 +790,38 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="owl.carousel.min.js"></script>
 	<script>
-document.querySelectorAll('.gallery img').forEach(function (elem) {
-	elem.addEventListener('click', function () {
-		var attr = elem.getAttribute('data-info');
-		document.querySelector(attr).classList.toggle('w3-show-block');
+
+$('.gallery img').click(function () {
+	var data = $(this).data('info');
+	$(data).toggleClass('w3-show-block');
+	$(document).keyup(function (e) {
+		if (e.keyCode == 27) {
+			$(data).toggleClass('w3-show-block');
+			$(document).off('keyup');
+		}
 	});
 });
 
-document.querySelectorAll('.w3-modal').forEach(function (elem) {
-	elem.addEventListener('click', function () {
-		elem.classList.toggle('w3-show-block');
-	});
+$('.w3-modal .w3-closebtn').click(function () {
+	$(this).parent().parent().parent().toggleClass('w3-show-block');
+	$(document).off('keyup');
 });
 
 $(document).ready(function() {
 	$(".owl-carousel").owlCarousel({
 		items: 6,
-		itemsDesktop : [1199,5],
-		itemsDesktopSmall : [980,4],
+		itemsDesktop: [1199,5],
+		itemsDesktopSmall: [980,4],
 		itemsTablet: [768,3],
-		itemsMobile : [479,2],
-		autoPlay : true,
-		stopOnHover : true,
+		itemsMobile: [479,2],
+		autoPlay: true,
+		stopOnHover: true,
 		responsive: true,
-		responsiveRefreshRate : 200,
+		responsiveRefreshRate: 200,
 		responsiveBaseWidth: window,
-		lazyLoad : false,
-		lazyFollow : true,
-		lazyEffect : "fade"
+		lazyLoad: false,
+		lazyFollow: true,
+		lazyEffect: "fade"
 	});
 });
 	</script>
