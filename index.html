@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Empresa de desenvolvimento de jogos e aplicativos interativos.">
+	<meta name="keywords" content="Desenvolvimento de software,Desenvolvimento,Software,Apps,aplicativos,Jogos,Games,Sistemas">
+	<meta name="author" content="Fabricio">
+	<title>Interama</title>
+	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<style>
+		html,
+		body,
+		header {
+			height: 100%;
+		}
+		
+		.gallery img {
+			cursor: pointer;
+			width: 100%;
+		}
+		
+		.gallery img:hover {
+			border: 8px solid black;
+		}
+		
+		.gallery-info {
+			position: fixed;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			left: 0;
+		}
+		
+		.w3-modal {
+			padding-top: 3rem !important;
+		}
+		
+		.w3-modal img {
+			width: 100%;
+		}
+		
+		.bg {
+			background-image: url(imgs/apple-1920.jpg);
+			background-position: center;
+			width: 100%;
+			height: 100%;
+		}
+		
+		.social {
+			padding-top: 3rem;
+			padding-right: 3rem;
+		}
+		
+		.social a {
+			color: lightgray;
+			text-decoration: none;
+		}
+		
+		.social a:hover {
+			color: white;
+		}
+	</style>
+</head>
+
+<body>
+	<header class="w3-display-container w3-content w3-wide" style="max-width:100%" id="home">
+		<div class="w3-display-topright social">
+			<a target="_blank" href="https://www.facebook.com/interamadev">
+				<i class="fa fa-2x fa-facebook-square" aria-hidden="true"></i>
+			</a>
+			<a target="_blank" href="https://www.linkedin.com/company/interama-games">
+				<i class="fa fa-2x fa-linkedin-square" aria-hidden="true"></i>
+			</a>
+			<a target="_blank" href="https://twitter.com/interama">
+				<i class="fa fa-2x fa-twitter-square" aria-hidden="true"></i>
+			</a>
+		</div>
+
+		<div class="bg">
+			<div class="w3-display-middle">
+				<img class="w3-image" src="imgs/logo.png" alt="" width="252" height="56">
+				<!--<div class="w3-black w3-padding" style="margin-top:8px">Tecnologia interativa</div>-->
+
+				<div class="w3-padding" style="color:white;font-size:200%">
+					We're a small team with 10+ years of experience in developing games and apps for our customers with the same passion that we create our own IP.
+				</div>
+			</div>
+	</header>
+
+	<div class="w3-content w3-padding w3-margin-bottom" style="max-width:1564px">
+
+		<div class="w3-container w3-padding-32" id="about">
+			<h3 class="w3-border-bottom w3-border-light-grey w3-padding-12">Sobre</h3>
+			<p>
+				Fabricamos diversão em todos os níveis. Desenvolvemos jogos, aplicativos e soluções interativas, visando o estímulo por meio da diversão. Temos uma produção bem versátil e nossos títulos têm qualidade reconhecida nacional e internacionalmente. Mas não desenvolvemos apenas projetos autorais, também trabalhamos sob demanda para a criação de aplicações, advergames, softwares educativos entre outras opções, com foco nos resultados do cliente. Colocamos à disposição nossa expertise em desenvolvimento de jogos 2D e 3D, para as plataformas Desktop, Web e Mobile.
+			</p>
+		</div>
+
+		<div class="w3-container" id="projects">
+			<h3 class="w3-border-bottom w3-border-light-grey w3-padding-12">Portfólio</h3>
+		</div>
+
+		<div class="w3-row-padding gallery">
+			<div class="w3-col l3 m6 w3-margin-bottom">
+				<div class="w3-display-container">
+					<div class="w3-display-topleft w3-black w3-padding">Gruitar Idol</div>
+					<img src="imgs/portfolio/guitaridol.jpg" alt="" data-info="#info-guitar-idol">
+				</div>
+			</div>
+			<div class="w3-col l3 m6 w3-margin-bottom">
+				<div class="w3-display-container">
+					<div class="w3-display-topleft w3-black w3-padding">Clubinho Salva Vidas</div>
+					<img src="imgs/portfolio/clubinho.jpg" alt="" data-info="#info-clubinho">
+				</div>
+			</div>
+			<div class="w3-col l3 m6 w3-margin-bottom">
+				<div class="w3-display-container">
+					<div class="w3-display-topleft w3-black w3-padding">Blooming Daisies</div>
+					<img src="imgs/portfolio/blooming.jpg" alt="" data-info="#info-blooming">
+				</div>
+			</div>
+			<div class="w3-col l3 m6 w3-margin-bottom">
+				<div class="w3-display-container">
+					<div class="w3-display-topleft w3-black w3-padding">Microkids Studio</div>
+					<img src="imgs/portfolio/mkstudio.jpg" alt="" data-info="#info-mkstudio">
+				</div>
+			</div>
+		</div>
+
+		<div class="w3-row-padding gallery">
+			<div class="w3-col l3 m6 w3-margin-bottom">
+				<div class="w3-display-container">
+					<div class="w3-display-topleft w3-black w3-padding">Esther</div>
+					<img src="imgs/portfolio/esther.jpg" alt="" data-info="#info-esther">
+				</div>
+			</div>
+			<div class="w3-col l3 m6 w3-margin-bottom">
+				<div class="w3-display-container">
+					<div class="w3-display-topleft w3-black w3-padding">Outback Kids</div>
+					<img src="imgs/portfolio/outbackkids.jpg" alt="" data-info="#info-outback">
+				</div>
+			</div>
+			<div class="w3-col l3 m6 w3-margin-bottom">
+				<div class="w3-display-container">
+					<div class="w3-display-topleft w3-black w3-padding">Faeries vs Darklings: Arcane</div>
+					<img src="imgs/portfolio/fvdarcane.jpg" alt="" data-info="#info-fvd">
+				</div>
+			</div>
+			<div class="w3-col l3 m6 w3-margin-bottom">
+				<div class="w3-display-container">
+					<div class="w3-display-topleft w3-black w3-padding">Poker Races</div>
+					<img src="imgs/portfolio/pokerraces.jpg" alt="" data-info="#info-poker-races">
+				</div>
+			</div>
+		</div>
+
+		<div class="w3-row-padding gallery">
+			<div class="w3-col l2 m4 w3-margin-bottom">
+				<div class="w3-display-container">
+					<div class="w3-display-topleft w3-black w3-padding">Incorporated</div>
+					<img src="imgs/portfolio/incorporated.jpg" alt="" data-info="#info-incorporated">
+				</div>
+			</div>
+			<div class="w3-col l2 m4 w3-margin-bottom">
+				<div class="w3-display-container">
+					<div class="w3-display-topleft w3-black w3-padding">Lex Venture</div>
+					<img src="imgs/portfolio/lex.jpg" alt="" data-info="#info-lex">
+				</div>
+			</div>
+			<div class="w3-col l2 m4 w3-margin-bottom">
+				<div class="w3-display-container">
+					<div class="w3-display-topleft w3-black w3-padding">The Walking Pac</div>
+					<img src="imgs/portfolio/walkingpac.jpg" alt="" data-info="#info-walking-pac">
+				</div>
+			</div>
+			<div class="w3-col l2 m4 w3-margin-bottom">
+				<div class="w3-display-container">
+					<div class="w3-display-topleft w3-black w3-padding">Watts</div>
+					<img src="imgs/portfolio/watts.jpg" alt="" data-info="#info-watts">
+				</div>
+			</div>
+			<div class="w3-col l2 m4 w3-margin-bottom">
+				<div class="w3-display-container">
+					<div class="w3-display-topleft w3-black w3-padding">Xpirado</div>
+					<img src="imgs/portfolio/xpirado.jpg" alt="" data-info="#info-xpirado">
+				</div>
+			</div>
+			<div class="w3-col l2 m4 w3-margin-bottom">
+				<div class="w3-display-container">
+					<div class="w3-display-topleft w3-black w3-padding">Physiojoy</div>
+					<img src="imgs/portfolio/physiojoy.jpg" alt="" data-info="#info-physiojoy">
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<footer class="w3-center w3-black w3-padding-64" style="margin-top:5rem">
+		<div class="w3-row-padding">
+			<div class="w3-col">
+				<p>contato@interama.net</p>
+				<p>+55 (27) 9 9951-7716</p>
+			</div>
+		</div>
+	</footer>
+
+	<div id="info-guitar-idol" class="w3-modal w3-hide">
+		<div class="w3-modal-content w3-animate-top">
+			<header class="w3-container w3-black">
+				<span class="w3-closebtn">&times;</span>
+				<h2>Guitar Idol</h2>
+			</header>
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-col l4">
+					<div class="w3-display-container">
+						<img src="imgs/screenshots/guitaridol/1.jpg">
+					</div>
+				</div>
+				<div class="w3-col l4">
+					<div class="w3-display-container">
+						<img src="imgs/screenshots/guitaridol/2.jpg">
+					</div>
+				</div>
+				<div class="w3-col l4">
+					<div class="w3-display-container">
+						<img src="imgs/screenshots/guitaridol/3.jpg">
+					</div>
+				</div>
+			</div>
+			<div class="w3-row w3-container">
+				<div class="w3-col">
+					<p>Guitar Idol é um jogo musical desenvolvido pela Interama e publicado pela Tec Toy para o console Mega Drive. O jogo usa um controle que simula uma guitarra de verdade e possui 60 músicas nacionais e internacionais de grandes bandas como Aerosmith, Alice Cooper, Deep Purple, Red Hot Chili Peppers, The Ramones, CPM22, NX Zero, Raimundos, entre muitos outros.</p>
+				</div>
+			</div>
+			<div class="w3-row w3-container">
+				<div class="w3-col w3-center w3-margin-bottom">
+					<iframe frameborder="0" allowfullscreen src="http://www.youtube.com/embed/Co_fM966O_g?rel=0" width="426" height="240"></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="info-clubinho" class="w3-modal w3-hide">
+		<div class="w3-modal-content w3-animate-top">
+			<header class="w3-container w3-black">
+				<span class="w3-closebtn">&times;</span>
+				<h2>Clubinho Salva Vidas</h2>
+			</header>
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-col l4">
+					<div class="w3-display-container">
+						<img src="imgs/screenshots/clubinho/1.jpg">
+					</div>
+				</div>
+				<div class="w3-col l4">
+					<div class="w3-display-container">
+						<img src="imgs/screenshots/clubinho/2.jpg">
+					</div>
+				</div>
+				<div class="w3-col l4">
+					<div class="w3-display-container">
+						<img src="imgs/screenshots/clubinho/3.jpg">
+					</div>
+				</div>
+			</div>
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-col l4">
+					<div class="w3-display-container">
+						<img src="imgs/screenshots/clubinho/4.jpg">
+					</div>
+				</div>
+				<div class="w3-col l4">
+					<div class="w3-display-container">
+						<img src="imgs/screenshots/clubinho/5.jpg">
+					</div>
+				</div>
+				<div class="w3-col l4">
+					<div class="w3-display-container">
+						<img src="imgs/screenshots/clubinho/6.jpg">
+					</div>
+				</div>
+			</div>
+			<div class="w3-row w3-container">
+				<div class="w3-col">
+					<p>O Clubinho Salva Vidas é um portal onde crianças podem acessar uma cidade virtual e jogar diversos minigames educativos.</p>
+				</div>
+			</div>
+			<div class="w3-row w3-container">
+				<div class="w3-col w3-center w3-margin-bottom">
+					<iframe frameborder="0" allowfullscreen src="https://www.youtube.com/embed/af_9t3zf-Bs?rel=0" width="426" height="240"></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="info-blooming" class="w3-modal w3-hide">
+		<div class="w3-modal-content w3-animate-top">
+			<header class="w3-container w3-black">
+				<span class="w3-closebtn">&times;</span>
+				<h2>Blooming Daisies</h2>
+			</header>
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-col l4">
+					<div class="w3-display-container">
+						<img src="imgs/screenshots/blooming/1.jpg">
+					</div>
+				</div>
+				<div class="w3-col l4">
+					<div class="w3-display-container">
+						<img src="imgs/screenshots/blooming/2.jpg">
+					</div>
+				</div>
+				<div class="w3-col l4">
+					<div class="w3-display-container">
+						<img src="imgs/screenshots/blooming/3.jpg">
+					</div>
+				</div>
+			</div>
+			<div class="w3-row w3-container">
+				<div class="w3-col">
+					<p>Blooming Daisies é um jogo de construção de jardins botânicos. Daisy é uma botânica reconhecida que de repente herda o jardim botânico do avô. Agora ela precisa da sua ajuda para transformar o parque em uma grande fonte de qualidade de vida para a cidade!</p>
+				</div>
+			</div>
+			<div class="w3-row w3-container">
+				<div class="w3-col w3-center w3-margin-bottom">
+					<iframe frameborder="0" allowfullscreen src="http://www.youtube.com/embed/qYDB5ay47zU?rel=0" width="426" height="240"></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="info-mkstudio" class="w3-modal w3-hide">
+		<div class="w3-modal-content w3-animate-top">
+			<header class="w3-container w3-black">
+				<span class="w3-closebtn">&times;</span>
+				<h2>Microkids Studio</h2>
+			</header>
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-col l4">
+					<div class="w3-display-container">
+						<img src="imgs/screenshots/mkstudio/1.jpg">
+					</div>
+				</div>
+				<div class="w3-col l4">
+					<div class="w3-display-container">
+						<img src="imgs/screenshots/mkstudio/2.jpg">
+					</div>
+				</div>
+				<div class="w3-col l4">
+					<div class="w3-display-container">
+						<img src="imgs/screenshots/mkstudio/3.jpg">
+					</div>
+				</div>
+			</div>
+			<div class="w3-row w3-container">
+				<div class="w3-col">
+					<p>Microkids Studio é um aplicativo educacional voltando para crianças de 6 a 12 anos que estimula a criatividade através de ferramentas de criação de ilustrações, revistas em quadrinhos, faixas, cartazes, histórias e vídeos. O aplicativo possui integração com Facebook para que as crianças possam compartilhar suas criações com seus amigos.</p>
+				</div>
+			</div>
+			<div class="w3-row w3-container">
+				<div class="w3-col w3-center w3-margin-bottom">
+					<iframe frameborder="0" allowfullscreen src="http://www.youtube.com/embed/LrOweM7cFhk?rel=0" width="426" height="240"></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="info-esther" class="w3-modal w3-hide">
+		<div class="w3-modal-content w3-animate-top">
+			<header class="w3-container w3-black">
+				<span class="w3-closebtn">&times;</span>
+				<h2>Esther</h2>
+			</header>
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-col l4">
+					<div class="w3-display-container">
+						<img src="imgs/screenshots/esther/1.jpg">
+					</div>
+				</div>
+				<div class="w3-col l4">
+					<div class="w3-display-container">
+						<img src="imgs/screenshots/esther/2.jpg">
+					</div>
+				</div>
+				<div class="w3-col l4">
+					<div class="w3-display-container">
+						<img src="imgs/screenshots/esther/3.jpg">
+					</div>
+				</div>
+			</div>
+			<div class="w3-row w3-container">
+				<div class="w3-col">
+					<p>Em Esther Art Gallery você tem o desafio de recuperar a glória das galerias de arte pelo mundo: conquiste clientes, venda peças, e recupere o amor pela arte! Esther é um jogo de gerenciamento de tempo onde, de maneira intuitiva, o jogador ajudará a jovem Esther a administrar galerias de arte nos anos 20. E, à medida que as metas são alcançadas, novas cidades se abrem para receber uma galeria. O jogo é vencedor do BR Games 2009!</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="info-outback" class="w3-modal w3-hide">
+		<div class="w3-modal-content w3-animate-top">
+			<header class="w3-container w3-black">
+				<span class="w3-closebtn">&times;</span>
+				<h2>Outback Kids</h2>
+			</header>
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-col l4">
+					<div class="w3-display-container">
+						<img src="imgs/screenshots/outback/1.jpg">
+					</div>
+				</div>
+				<div class="w3-col l4">
+					<div class="w3-display-container">
+						<img src="imgs/screenshots/outback/2.jpg">
+					</div>
+				</div>
+				<div class="w3-col l4">
+					<div class="w3-display-container">
+						<img src="imgs/screenshots/outback/3.jpg">
+					</div>
+				</div>
+			</div>
+			<div class="w3-row w3-container">
+				<div class="w3-col">
+					<p>O Outback Kids é um aplicativo que foi desenvolvido em parceria com a agência Media Interactive para o Outback Steakhouse. Nele, crianças tem acesso a três mini jogos e ao menu Outback Kids.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="info-fvd" class="w3-modal w3-hide">
+		<div class="w3-modal-content w3-animate-top">
+			<header class="w3-container w3-black">
+				<span class="w3-closebtn">&times;</span>
+				<h2>Faeries vs Darklings: Arcane</h2>
+			</header>
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-col l4">
+					<div class="w3-display-container">
+						<img src="imgs/screenshots/fvd/1.jpg">
+					</div>
+				</div>
+				<div class="w3-col l4">
+					<div class="w3-display-container">
+						<img src="imgs/screenshots/fvd/2.jpg">
+					</div>
+				</div>
+				<div class="w3-col l4">
+					<div class="w3-display-container">
+						<img src="imgs/screenshots/fvd/3.jpg">
+					</div>
+				</div>
+			</div>
+			<div class="w3-row w3-container">
+				<div class="w3-col">
+					<p>Fairies vs Darklings: Arcane Edition é a nova versão do game social Faeries vs. Darklings para Facebook, desenvolvido pela Interama e publicado pela Atari em 2010. Essa nova versão conta com a divertida mistura de match-3 e combate apresentada na versão clássica, somada com uma grande quantidade de novas features que visam adicionar uma nova camada de estratégia e profundidade ao game. Viaje para o mundo encantado de Titania, um reino outrora triunfante e repleto de magia e paz... Até que, repentinamente, a corrupção das trevas cresceu em seu coração, ameaçando cobrir todas as ilhas e seus habitantes em ruína e desolação. Para salvar o mundo desta catastrofe, você deve utilizar os poderes mágicos da própria terra através de combinações de gemas, usando seu mana para invocar uma variedade de Fadas mágicas que irão auxiliá-lo no combate contra os maliciosos Darklings.</p>
+				</div>
+			</div>
+			<div class="w3-row w3-container">
+				<div class="w3-col w3-center w3-margin-bottom">
+					<iframe frameborder="0" allowfullscreen src="https://www.youtube.com/embed/slr3lWaBWqM?rel=0" width="426" height="240"></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="info-poker-races" class="w3-modal w3-hide">
+		<div class="w3-modal-content w3-animate-top">
+			<header class="w3-container w3-black">
+				<span class="w3-closebtn">&times;</span>
+				<h2>Poker Races</h2>
+			</header>
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-col l4">
+					<div class="w3-display-container">
+						<img src="imgs/screenshots/pokerraces/1.jpg">
+					</div>
+				</div>
+				<div class="w3-col l4">
+					<div class="w3-display-container">
+						<img src="imgs/screenshots/pokerraces/2.jpg">
+					</div>
+				</div>
+				<div class="w3-col l4">
+					<div class="w3-display-container">
+						<img src="imgs/screenshots/pokerraces/3.jpg">
+					</div>
+				</div>
+			</div>
+			<div class="w3-row w3-container">
+				<div class="w3-col">
+					<p>Poker Races é um jogo social que mistura temática de corridas com partidas de poker criando um divertido puzzle cheio de desafios.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="info-incorporated" class="w3-modal w3-hide">
+		<div class="w3-modal-content w3-animate-top">
+			<header class="w3-container w3-black">
+				<span class="w3-closebtn">&times;</span>
+				<h2>Incorporated</h2>
+			</header>
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-col l4">
+					<div class="w3-display-container">
+						<img src="imgs/screenshots/incorporated/1.jpg">
+					</div>
+				</div>
+				<div class="w3-col l4">
+					<div class="w3-display-container">
+						<img src="imgs/screenshots/incorporated/2.jpg">
+					</div>
+				</div>
+				<div class="w3-col l4">
+					<div class="w3-display-container">
+						<img src="imgs/screenshots/incorporated/3.jpg">
+					</div>
+				</div>
+			</div>
+			<div class="w3-row w3-container">
+				<div class="w3-col">
+					<p>Incorporated é um jogo de simulação empresarial onde o jogador evoluiu na carreira de acordo com seu desempenho profissional e seus relacionamentos.</p>
+				</div>
+			</div>
+			<div class="w3-row w3-container">
+				<div class="w3-col w3-center w3-margin-bottom">
+					<iframe frameborder="0" allowfullscreen src="https://www.youtube.com/embed/RTg_GjxX4Dk?rel=0" width="426" height="240"></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="info-lex" class="w3-modal w3-hide">
+		<div class="w3-modal-content w3-animate-top">
+			<header class="w3-container w3-black">
+				<span class="w3-closebtn">&times;</span>
+				<h2>Lex Venture</h2>
+			</header>
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-col l4">
+					<div class="w3-display-container">
+						<img src="imgs/screenshots/lex/1.jpg">
+					</div>
+				</div>
+				<div class="w3-col l4">
+					<div class="w3-display-container">
+						<img src="imgs/screenshots/lex/2.jpg">
+					</div>
+				</div>
+				<div class="w3-col l4">
+					<div class="w3-display-container">
+						<img src="imgs/screenshots/lex/3.jpg">
+					</div>
+				</div>
+			</div>
+			<div class="w3-row w3-container">
+				<div class="w3-col">
+					<p>Lex Venture: A Crossword Caper! é um jogo que mistura palavras cruzadas com elementos de aventura. Ajude a turma do Eugênio a recuperar a Máquina de Letras a tempo para a feira de ciências! Diversão para toda a família!</p>
+				</div>
+			</div>
+			<div class="w3-row w3-container">
+				<div class="w3-col w3-center w3-margin-bottom">
+					<iframe frameborder="0" allowfullscreen src="http://www.youtube.com/embed/I6Q7AJdAHgI?rel=0" width="426" height="240"></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="info-walking-pac" class="w3-modal w3-hide">
+		<div class="w3-modal-content w3-animate-top">
+			<header class="w3-container w3-black">
+				<span class="w3-closebtn">&times;</span>
+				<h2>The Walking Pac</h2>
+			</header>
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-col l4">
+					<div class="w3-display-container">
+						<img src="imgs/screenshots/thewalkingpac/1.jpg">
+					</div>
+				</div>
+				<div class="w3-col l4">
+					<div class="w3-display-container">
+						<img src="imgs/screenshots/thewalkingpac/2.jpg">
+					</div>
+				</div>
+				<div class="w3-col l4">
+					<div class="w3-display-container">
+						<img src="imgs/screenshots/thewalkingpac/3.jpg">
+					</div>
+				</div>
+			</div>
+			<div class="w3-row w3-container">
+				<div class="w3-col">
+					<p>Advergame para Facebook, desenvolvido para divulgação da fanpage da Interama. O jogo faz uma paródia divertida que mistura Pac Man com a famosa série de zumbis The Walking Dead.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="info-lex" class="w3-modal w3-hide">
+		<div class="w3-modal-content w3-animate-top">
+			<header class="w3-container w3-black">
+				<span class="w3-closebtn">&times;</span>
+				<h2>Lex Venture</h2>
+			</header>
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-col l4">
+					<div class="w3-display-container">
+						<img src="imgs/screenshots/lex/1.jpg">
+					</div>
+				</div>
+				<div class="w3-col l4">
+					<div class="w3-display-container">
+						<img src="imgs/screenshots/lex/2.jpg">
+					</div>
+				</div>
+				<div class="w3-col l4">
+					<div class="w3-display-container">
+						<img src="imgs/screenshots/lex/3.jpg">
+					</div>
+				</div>
+			</div>
+			<div class="w3-row w3-container">
+				<div class="w3-col">
+					<p>Lex Venture: A Crossword Caper! é um jogo que mistura palavras cruzadas com elementos de aventura. Ajude a turma do Eugênio a recuperar a Máquina de Letras a tempo para a feira de ciências! Diversão para toda a família!</p>
+				</div>
+			</div>
+			<div class="w3-row w3-container">
+				<div class="w3-col w3-center w3-margin-bottom">
+					<iframe frameborder="0" allowfullscreen src="http://www.youtube.com/embed/I6Q7AJdAHgI?rel=0" width="426" height="240"></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="info-watts" class="w3-modal w3-hide">
+		<div class="w3-modal-content w3-animate-top">
+			<header class="w3-container w3-black">
+				<span class="w3-closebtn">&times;</span>
+				<h2>Watts</h2>
+			</header>
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-col l4">
+					<div class="w3-display-container">
+						<img src="imgs/screenshots/watts/1.jpg">
+					</div>
+				</div>
+				<div class="w3-col l4">
+					<div class="w3-display-container">
+						<img src="imgs/screenshots/watts/2.jpg">
+					</div>
+				</div>
+				<div class="w3-col l4">
+					<div class="w3-display-container">
+						<img src="imgs/screenshots/watts/3.jpg">
+					</div>
+				</div>
+			</div>
+			<div class="w3-row w3-container">
+				<div class="w3-col">
+					<p>Watts é um Advergame desenvolvido para a EDP em parceria com o Instituto Ideias com o objetivo de conscientizar crianças do ensino fundamental sobre a importância da conservação de energia. No jogo, crianças de 4 a 8 anos participam de uma divertida disputa num tabuleiro virtual e descobrem importantes dicas de segurança e o que fazer com equipamentos eletrônicos para reduzir o consumo elétrico. Por exemplo, aprendem a identificar quais equipamentos mais gastam energia, a reconhecer sobrecargas nas tomadas, a evitar banhos quentes, a não permitir gatos na rede elétrica, entre outras atividades. Mais informações no site <a href="http://www.boaenergianasescolas.com.br/escelsa/nossaturma.php" target="_blank">Boa Energia nas Escolas</a></p>
+				</div>
+			</div>
+			<div class="w3-row w3-container">
+				<div class="w3-col w3-center w3-margin-bottom">
+					<iframe frameborder="0" allowfullscreen src="http://www.youtube.com/embed/jhUqwrQa39k?rel=0" width="426" height="240"></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="info-xpirado" class="w3-modal w3-hide">
+		<div class="w3-modal-content w3-animate-top">
+			<header class="w3-container w3-black">
+				<span class="w3-closebtn">&times;</span>
+				<h2>Xpirado</h2>
+			</header>
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-col l4">
+					<div class="w3-display-container">
+						<img src="imgs/screenshots/xpirado/1.jpg">
+					</div>
+				</div>
+				<div class="w3-col l4">
+					<div class="w3-display-container">
+						<img src="imgs/screenshots/xpirado/2.jpg">
+					</div>
+				</div>
+				<div class="w3-col l4">
+					<div class="w3-display-container">
+						<img src="imgs/screenshots/xpirado/3.jpg">
+					</div>
+				</div>
+			</div>
+			<div class="w3-row w3-container">
+				<div class="w3-col">
+					<p>Xpirado é um Advergame desenvolvido para o parque aquático Rio Quente para divulgação do seu novo brinquedo, o Xpirado! Colete moedas, desvie de obstáculos e não deixe as piranhas te pegar!</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="info-physiojoy" class="w3-modal w3-hide">
+		<div class="w3-modal-content w3-animate-top">
+			<header class="w3-container w3-black">
+				<span class="w3-closebtn">&times;</span>
+				<h2>Physiojoy</h2>
+			</header>
+			<div class="w3-row-padding w3-margin-top">
+				<div class="w3-col l4">
+					<div class="w3-display-container">
+						<img src="imgs/screenshots/physiojoy/1.jpg">
+					</div>
+				</div>
+				<div class="w3-col l4">
+					<div class="w3-display-container">
+						<img src="imgs/screenshots/physiojoy/2.jpg">
+					</div>
+				</div>
+				<div class="w3-col l4">
+					<div class="w3-display-container">
+						<img src="imgs/screenshots/physiojoy/3.jpg">
+					</div>
+				</div>
+			</div>
+			<div class="w3-row w3-container">
+				<div class="w3-col">
+					<p>Physiojoy é um jogo sério projetado para avaliação e reabilitação de déficit motor e neurológico em pacientes de fisioterapia usando o Kinect.</p>
+				</div>
+			</div>
+			<div class="w3-row w3-container">
+				<div class="w3-col w3-center w3-margin-bottom">
+					<iframe frameborder="0" allowfullscreen src="https://www.youtube.com/embed/Duoj0z8wuPs?rel=0" width="426" height="240"></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script>
+document.querySelectorAll('.gallery img').forEach(function (elem) {
+	elem.addEventListener('click', function () {
+		var attr = elem.getAttribute('data-info');
+		document.querySelector(attr).classList.toggle('w3-show-block');
+	});
+});
+
+document.querySelectorAll('.w3-modal').forEach(function (elem) {
+	elem.addEventListener('click', function () {
+		elem.classList.toggle('w3-show-block');
+	});
+});
+	</script>
+</body>
+
+</html>
