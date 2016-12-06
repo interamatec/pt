@@ -69,9 +69,6 @@ iframe {
 
 .owl-carousel div {
     float: left;
-    -webkit-filter: grayscale(1);
-    filter: grayscale(1);
-    opacity: 0.65;
 }
 
 .custom-row {
