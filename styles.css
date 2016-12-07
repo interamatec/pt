@@ -94,3 +94,8 @@ iframe {
     align-content: center;
     flex-wrap: wrap;
 }
+
+footer {
+    margin-top: 5rem;
+    font-size: 120%;
+}
