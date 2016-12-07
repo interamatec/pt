@@ -45,17 +45,32 @@ iframe {
     width: 100%;
 }
 
-.bg {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(imgs/top.jpg);
-    background-position: center;
-    background-size: cover;
+.welcome,
+.welcome-bg,
+.welcome-bg img {
     width: 100%;
     height: 100%;
+}
+
+.welcome-bg img {
+    object-fit: cover;
+    display: none;
+}
+
+.welcome-bg:after {
+    content: '\A';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
 }
 
 .social {
     padding-top: 3rem;
     padding-right: 3rem;
+    z-index: 99;
 }
 
 .social a {
